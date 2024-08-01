@@ -44,3 +44,4 @@ Route::get('/admin/submissions', [AdminController::class, 'submissions'])->name(
 
 // Route for viewing a single submission
 Route::get('/admin/submissions/{id}', [AdminController::class, 'showcontact'])->name('admin.submission.view');
+Route::post('/logout', [AdminController::class, 'logout'])->name('logout');

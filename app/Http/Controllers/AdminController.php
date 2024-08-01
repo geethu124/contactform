@@ -36,7 +36,7 @@ class AdminController extends Controller
 
         return DataTables::of($submissions)
             ->addColumn('action', function ($submission) {
-                return '<a href="' . route('admin.submission.view', $submission->id) . '" class="btn btn-primary">View</a>';
+                return '<a href="' . route('admin.submission.view', $submission->id) . '" class="btn btn-primary appbtn">View</a>';
             })
             ->rawColumns(['action'])
             ->toJson();
@@ -48,6 +48,14 @@ class AdminController extends Controller
     public function showcontact($id){
         $submission = Submission::findOrFail($id);
         return view('auth.showcontact', compact('submission'));
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/admin');
     }
 
 

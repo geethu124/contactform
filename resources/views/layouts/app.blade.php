@@ -41,6 +41,16 @@
                 </a>
 
             </div>
+
+            @auth
+            <div class="ml-auto">
+                <!-- Logout Form -->
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="form-inline">
+                    @csrf
+                    <button type="submit" class="btn btn-primary appbtn">Logout</button>
+                </form>
+            </div>
+            @endauth
         </nav>
 
         <main class="py-4">

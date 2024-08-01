@@ -14,7 +14,7 @@
             <p><strong>Email:</strong> {{ $submission->email }}</p>
             <p><strong>Subject:</strong> {{ $submission->subject }}</p>
             <p><strong>Message:</strong> {{ $submission->message }}</p>
-            <a href="{{ route('admin.submissions') }}" class="btn btn-secondary">Back to Submissions</a>
+            <a href="{{ route('admin.submissions') }}" class="btn btn-secondary appbtn">Back to Submissions</a>
         </div>
     </div>
 </div>

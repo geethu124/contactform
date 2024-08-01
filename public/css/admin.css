@@ -1,0 +1,23 @@
+.logincontainer{
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+.appbtn{
+    background-color:#794ea1;
+    border: none;
+}
+.appbtn:hover{
+    background-color: #dbd5d9;
+    color: #794ea1;
+
+}
+.page-item.active .page-link{
+    background-color:#794ea1;
+    border: none;
+}
