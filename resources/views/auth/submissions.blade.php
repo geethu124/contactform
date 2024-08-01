@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <!-- DataTables will populate this -->
+
         </tbody>
     </table>
 </div>
