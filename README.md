@@ -1,5 +1,6 @@
 clone the repository
 
+
 Update .env file with the bellow code
 
 APP_NAME=Laravel
