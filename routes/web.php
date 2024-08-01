@@ -30,18 +30,18 @@ Route::post('/contacts/create', [ContactController::class, 'submitform'])->name(
 //     Route::post('/admin', [AdminController::class, 'submissions'])->name('admin.show');
 //     // Add more admin routes here
 // });
-// Display the admin login form (GET request)
+
 Route::get('/admin', [AdminController::class, 'login'])->name('admin.login');
 
-// Handle the login form submission (POST request)
+
 Route::post('/admin/login', [AdminController::class, 'adminlogin'])->name('admin.login.submit');
 
-// Route for listing submissions (DataTables endpoint)
+
 Route::get('/admin/submissions/data', [AdminController::class, 'listSubmissions'])->name('admin.submissions.data');
 
-// Route for the submissions view page
+
 Route::get('/admin/submissions', [AdminController::class, 'submissions'])->name('admin.submissions');
 
-// Route for viewing a single submission
+
 Route::get('/admin/submissions/{id}', [AdminController::class, 'showcontact'])->name('admin.submission.view');
 Route::post('/logout', [AdminController::class, 'logout'])->name('logout');
